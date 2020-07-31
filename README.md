@@ -17,7 +17,11 @@ The program will only respond if you type `no` otherwise it takes the answer as 
 
 If the answer is yes the loop goes on until you respond no. 
 
-When you respond no, the person(s) are categorized into four different levels based on how many articles they've sold.
+When you respond no, the person(s) are categorized into four different levels based on how many articles they've sold (Line 73 - 91).
+
+The program controls which category the person belongs to and adds it to the list.
+
+This is the four different categories: 
 
 * Under 50 articles
 * From 50 to 99 articles
