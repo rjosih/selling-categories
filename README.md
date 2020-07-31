@@ -29,6 +29,18 @@ Also a new .txt-file named `Information.txt` will be visable with the same conte
 
 If you decide to run the program again the text file will be overwritten. 
 
+The terminal will look like this: 
+
+![PictureOfTerminal](https://i.imgur.com/LbwRPd6.png)
+
+
+The .txt-file will look like this: 
+
+![PictureOfTxtFile](https://i.imgur.com/ygn6fjN.png)
+
+
+
+
 
 
 
