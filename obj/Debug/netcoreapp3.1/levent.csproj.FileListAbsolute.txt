@@ -1,0 +1,12 @@
+/Users/rosaekstrom/programming/levent/bin/Debug/netcoreapp3.1/levent.deps.json
+/Users/rosaekstrom/programming/levent/bin/Debug/netcoreapp3.1/levent.runtimeconfig.json
+/Users/rosaekstrom/programming/levent/bin/Debug/netcoreapp3.1/levent.runtimeconfig.dev.json
+/Users/rosaekstrom/programming/levent/bin/Debug/netcoreapp3.1/levent.dll
+/Users/rosaekstrom/programming/levent/bin/Debug/netcoreapp3.1/levent.pdb
+/Users/rosaekstrom/programming/levent/obj/Debug/netcoreapp3.1/levent.csprojAssemblyReference.cache
+/Users/rosaekstrom/programming/levent/obj/Debug/netcoreapp3.1/levent.AssemblyInfoInputs.cache
+/Users/rosaekstrom/programming/levent/obj/Debug/netcoreapp3.1/levent.AssemblyInfo.cs
+/Users/rosaekstrom/programming/levent/obj/Debug/netcoreapp3.1/levent.csproj.CoreCompileInputs.cache
+/Users/rosaekstrom/programming/levent/obj/Debug/netcoreapp3.1/levent.dll
+/Users/rosaekstrom/programming/levent/obj/Debug/netcoreapp3.1/levent.pdb
+/Users/rosaekstrom/programming/levent/obj/Debug/netcoreapp3.1/levent.genruntimeconfig.cache
