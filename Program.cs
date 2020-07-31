@@ -21,6 +21,8 @@ namespace levent
             
             string mall = "Namn " + "Personnr " + "Distrikt " + "Antal"; 
             string summary = "";
+
+            string allInfo = "";
                         
             // The different lists aka categories
             var under50list = new ArrayList(); 
@@ -64,39 +66,33 @@ namespace levent
                 string answer = Console.ReadLine();
             
                 if (answer == "no"){
-                    Console.WriteLine(mall + "\n");
+                    allInfo += mall + "\n";
                     
                     if(under50list.Count > 0){
-                        PrintValues( under50list );
-                        Console.WriteLine(under50list.Count + under50string);
+                        allInfo += String.Join("\n", under50list.ToArray());
+                        allInfo += "\n" + under50list.Count + under50string + "\n";
                     } 
 
                     if(from50to99list.Count > 0){
-                        PrintValues(from50to99list);
-                        Console.WriteLine(from50to99list.Count + from50to99string);
+                        allInfo += String.Join("\n", from50to99list.ToArray());
+                        allInfo += "\n" + from50to99list.Count + from50to99string + "\n";
                     } 
 
                     if(from99to199list.Count > 0){
-                        PrintValues(from99to199list);
-                        Console.WriteLine(from99to199list.Count + from99to199string);
+                        allInfo += String.Join("\n", from99to199list.ToArray());
+                        allInfo += "\n" + from99to199list.Count + from99to199string + "\n";
                     }
 
                     if(over199list.Count > 0){
-                        PrintValues(over199list);
-                        Console.WriteLine(over199list.Count + over199string);
+                        allInfo += String.Join("\n", over199list.ToArray());
+                        allInfo += "\n" + over199list.Count + over199string + "\n";
                     }
-
-                    string test = "Test";
-                    WriteToFile(test); 
+                    
+                Console.WriteLine(allInfo);
+                WriteToFile(allInfo); 
                 break;               
                 }
             }
-        }
-        
-        // Method that prints all objects in the given ArrayList
-        public static void PrintValues( IEnumerable arrayList )  {
-        foreach ( Object obj in arrayList )
-            Console.WriteLine("   {0}", obj);
         }
 
         // Method that creates and writes the information to a text file
