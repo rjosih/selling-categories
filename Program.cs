@@ -30,8 +30,8 @@ namespace levent
             var from99to199list = new ArrayList();  
             var over199list = new ArrayList();
             
+            // Infinite loop until you say no
             for(;;){
-
                 // Name
                 Console.WriteLine("Enter a person's name:");
                 name = Console.ReadLine();
@@ -50,7 +50,7 @@ namespace levent
 
                 summary = name + " " + personalNumber + " " + district + " " + quantity;
                 
-                // Checks how many sellers in right categories
+                // Categorizes the sellers and add them in the right array list
                 if(quantity < 50){
                     under50list.Add(summary);
                 }else if(quantity > 50 && quantity < 99){
@@ -62,10 +62,12 @@ namespace levent
                     Console.WriteLine(over199list.Count);
                 }
                 
+                // If you write anything else than no it will take that as yes/continue
                 Console.WriteLine("You want to add another person? yes/no");
                 string answer = Console.ReadLine();
             
                 if (answer == "no"){
+                    // Formats the categories into a readable string
                     allInfo += mall + "\n";
                     
                     if(under50list.Count > 0){
@@ -87,18 +89,23 @@ namespace levent
                         allInfo += String.Join("\n", over199list.ToArray());
                         allInfo += "\n" + over199list.Count + over199string + "\n";
                     }
-                    
+
                 Console.WriteLine(allInfo);
                 WriteToFile(allInfo); 
+
+                // Breaks the infinite loop
                 break;               
                 }
             }
         }
 
         // Method that creates and writes the information to a text file
-        private static void WriteToFile( string test )  {
+        private static void WriteToFile( string information )  {
+            // Creates the new file named Information.txt
             StreamWriter File = new StreamWriter("Information.txt");
-            File.WriteLine(test);
+            // Writes the information to the created file
+            File.WriteLine(information);
+            // Closes the StreamWriter
             File.Close();
         }
     }
