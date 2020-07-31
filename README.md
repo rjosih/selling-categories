@@ -39,6 +39,16 @@ The .txt-file will look like this:
 ![PictureOfTxtFile](https://i.imgur.com/ygn6fjN.png)
 
 
+### Some small explanations for Nico and Levent
+* `ReadLine` makes the program read what you has written in the terminal
+* `Convert.ToDecimal` and `Convert.ToInt32` is to convert the string from the terminal into a number
+* Why decimal is used on district and personal number is that the "numbers" given is sometimes too large for the Int-limit. Decimal can handle more characters.
+* The symbol `"\n"` stands for new line and simply jumps to a new line. Just for formatting. 
+* On line 74 `String.Join("\n", under50list.ToArray());` converts the array list to a string so it can be added to the string that gonna be written to the file. ArrayLists can't be written "raw" in this situation.
+* The symbol `allInfo +=` stands for adding information to an existing object so it doesn't get overwritten.
+
+Hejdå Levent och Nico hoppas ni gillade min presentation xoxo 
+
 
 
 
